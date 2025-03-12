@@ -1,0 +1,154 @@
+/* Varible */
+:root {
+    --hijau-tua : #3D8D7A;
+    --toska : #B3D8A8;
+    --putih : #FBFFE4;
+    --biru-muda: #A3D1C6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #BBB;
+}
+
+body {
+    background: var(--putih);
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    
+}
+
+
+/* Header Start */
+nav {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 90px;
+    background: var(--putih);
+    padding-inline: 9vw;
+    transition: .4s;
+    z-index: 9999999;
+}
+
+nav .logo {
+    position: relative;
+
+}
+
+nav .logo span {
+    color: var(--biru-muda);
+}
+
+nav .logo .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--hijau-tua);
+}
+
+nav .menu .menu-list {
+    display: flex;
+}
+
+nav .menu .menu-list .list {
+    list-style-type: none;
+    position: relative;
+
+}
+
+nav .menu .menu-list .list .link {
+    text-decoration: none;
+    color: var(--hijau-tua);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 15px;
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+nav .menu-btn i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Header Start */
+
+/* Main Start Wrapper */
+
+.wrapper {
+    height: 150vh;
+}
+
+/* Main End Wrapper */
+
+/* MEDIA QUERY */
+
+/* 1024px */
+/* 900px */
+@media only screen and (max-width: 900px){
+    nav .menu {
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+
+    nav .menu.responsive {
+        left: 0;
+    }
+
+    nav .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* 540px */
+
+
