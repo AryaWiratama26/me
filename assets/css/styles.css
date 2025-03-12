@@ -163,7 +163,7 @@ nav .menu-btn i {
     gap: 30px;
 }
 
-.featured .featured-text .social-media-icons .icons {
+.icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,7 +374,57 @@ h3 {
     overflow: hidden;
     border-radius: 20px;
 }
+/* Projects End */
 /* Main End Wrapper */
+
+/* Footer Start */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: var(--hijau-tua);
+    padding-block: 40px;
+    color: var(--putih);
+}
+
+.top-footer p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mid-footer .footer-menu {
+    display: flex;
+
+}
+
+.mid-footer .footer-menu .footer-list {
+    list-style-type: none;
+}
+
+.mid-footer .footer-menu .footer-list a {
+    text-decoration: none;
+    color: var(--putih);
+    font-weight: 400;
+    margin-inline: 15px;
+
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+    background: var(--hijau-tua);
+}
+
+.bottom-footer {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* Footer End */
 
 /* MEDIA QUERY */
 
@@ -482,5 +532,15 @@ h3 {
     }
 }
 /* 540px */
+
+@media only screen and (max-width: 540px) {
+    .featured .featured-text .featured-name {
+        font-size: 40px;
+    }
+
+    .projects-con .project-frame {
+        width: 100%;
+    }
+}
 
 

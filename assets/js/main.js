@@ -21,3 +21,11 @@ function headerShadows() {
         header.style.lineHeight = "90px";
     }
 }
+
+var typingEffect = new Typed(".typedText", {
+    strings : ["Machine Learning Engineer", "Gamer", "Student"],
+    loop : true,
+    typeSpeed : 100,
+    backSpeed : 80,
+    backDelay : 2000
+})
