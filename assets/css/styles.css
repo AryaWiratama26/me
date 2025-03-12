@@ -4,6 +4,8 @@
     --toska : #B3D8A8;
     --putih : #FBFFE4;
     --biru-muda: #A3D1C6;
+    --bg-abu: rgb(240, 240, 240);
+    --abu-font: rgb(66, 66, 66);
 }
 
 * {
@@ -229,6 +231,149 @@ nav .menu-btn i {
 .scroll-icon .scroll-btn i {
     font-size: 15px;
 }
+
+/* About Me Start*/
+
+.header-me {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.header-me h1 {
+    font-weight: 600;
+    color: var(--hijau-tua);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--hijau-tua);
+    margin-bottom: 10px;
+}
+
+.section {
+    padding-block: 5em;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+    
+}
+
+.row .column {
+    display: flex;
+    width: 50%;
+}
+
+.row .column .about-in {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    background: var(--bg-abu);
+    box-shadow: 1px 8px 10px 2px var(--toska);
+    border-radius: 20px;
+}
+
+.row .column .about-in p {
+    text-align: center;
+    font-size: 15px;
+    color: var(--abu-font);
+}
+
+.skills-frame {
+    margin: 10px;
+}
+
+.skills-frame .skills-head {
+    margin-bottom: 30px;
+}
+
+.skills-frame .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-frame .skill-list span {
+    font-size: 12px;
+    background-color: var(--bg-abu);
+    color: var(--abu-font);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+
+/* About Me End*/
+
+/* Project Start */
+.projects-con {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects-con .project-frame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 350px;
+    background: var(--bg-abu);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--toska);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.projects-con .project-frame > label {
+    color: var(--abu-font);
+    font-weight: 600;
+}
+
+.projects-con .project-frame::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--hijau-tua);
+    width: 100%;
+    height: 100%;
+    transition: .4s; 
+    z-index: 1;   
+}
+
+.projects-con .project-frame:hover::after {
+    bottom: 0;
+}
+
+.projects-con .project-frame:hover i,
+.projects-con .project-frame:hover h3,
+.projects-con .project-frame:hover img {
+    color: var(--putih);
+    z-index: 2;
+}
+
+.projects-con .project-frame:hover label {
+    color: var(--abu-font);
+    z-index: 2;
+}
+
+.projects-con .project-frame img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
 /* Main End Wrapper */
 
 /* MEDIA QUERY */
@@ -307,6 +452,33 @@ nav .menu-btn i {
     .side-image .image, .side-image .image img {
         width: 150px;
         height: 150px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;        
+    }
+
+    .row .column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .row .column .about-in {
+        width: 100%;;
+    }
+
+    .projects-con {
+        justify-content: center;
+    }
+
+    .projects-con .project-frame {
+        width: 80%;
+        height: 300px;
     }
 }
 /* 540px */
