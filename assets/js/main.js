@@ -65,37 +65,3 @@ ScrollReveal().reveal(".project-frame", {
 })
 
 
-ScrollReveal().reveal(".top-footer", {
-    distance: "50px",
-    origin: "left",
-    duration: 1000,
-    reset: true,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-})
-
-
-ScrollReveal().reveal(".mid-footer", {
-    distance: "50px",
-    origin: "right",
-    duration: 1000,
-    reset: true,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-})
-
-
-ScrollReveal().reveal(".footer-social-icons", {
-    distance: "50px",
-    origin: "left",
-    duration: 1000,
-    reset: true,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-})
-
-ScrollReveal().reveal(".bottom-footer", {
-    distance: "50px",
-    origin: "right",
-    duration: 1000,
-    reset: true,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-})
-
