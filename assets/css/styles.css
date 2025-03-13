@@ -47,6 +47,13 @@ body {
     
 }
 
+.sosmed {
+    color: var(--hijau-tua);
+}
+
+.sosmed-2 {
+    color: var(--putih);
+}
 
 /* Header Start */
 nav {
@@ -174,7 +181,8 @@ nav .menu-btn i {
     cursor: pointer;
 }
 
-.featured .featured-text .social-media-icons .icons:hover {
+.featured .featured-text .social-media-icons .sosmed:hover,
+.sosmed-2:hover {
     color: var(--biru-muda);
 }
 

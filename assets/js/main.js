@@ -28,4 +28,74 @@ var typingEffect = new Typed(".typedText", {
     typeSpeed : 100,
     backSpeed : 80,
     backDelay : 2000
+});
+
+
+ScrollReveal().reveal(".about-in", {
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+});
+
+ScrollReveal().reveal(".skills-frame", {
+    distance: "50px",
+    origin: "right",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
 })
+
+
+ScrollReveal().reveal(".project-frame", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
+ScrollReveal().reveal(".project-frame", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
+
+ScrollReveal().reveal(".top-footer", {
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
+
+ScrollReveal().reveal(".mid-footer", {
+    distance: "50px",
+    origin: "right",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
+
+ScrollReveal().reveal(".footer-social-icons", {
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
+ScrollReveal().reveal(".bottom-footer", {
+    distance: "50px",
+    origin: "right",
+    duration: 1000,
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+})
+
