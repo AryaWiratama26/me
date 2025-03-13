@@ -30,47 +30,47 @@ var typingEffect = new Typed(".typedText", {
     backDelay : 2000
 });
 
-ScrollReveal().reveal('.featured', {
-    delay: 200,
-    duration: 500,    
-    reset: true,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '10px'
-});
+// ScrollReveal().reveal('.featured', {
+//     delay: 200,
+//     duration: 500,    
+//     reset: true,
+//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
+//     distance: '10px'
+// });
 
-ScrollReveal().reveal('.about-in', {
-    delay: 200,
-    duration: 500,    
-    reset: true,
-    origin: 'left',
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '10px'
-});
+// ScrollReveal().reveal('.about-in', {
+//     delay: 200,
+//     duration: 500,    
+//     reset: true,
+//     origin: 'left',
+//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
+//     distance: '10px'
+// });
 
-ScrollReveal().reveal('.skills-frame', {
-    delay: 200,
-    duration: 500,    
-    reset: true,
-    origin: 'right',
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '10px'
-});
+// ScrollReveal().reveal('.skills-frame', {
+//     delay: 200,
+//     duration: 500,    
+//     reset: true,
+//     origin: 'right',
+//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
+//     distance: '10px'
+// });
 
 
-ScrollReveal().reveal('.project-frame', {
-    delay: 200,
-    duration: 500,    
-    reset: true,
-    origin: 'bottom',
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '10px'
-});
+// ScrollReveal().reveal('.project-frame', {
+//     delay: 200,
+//     duration: 500,    
+//     reset: true,
+//     origin: 'bottom',
+//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
+//     distance: '10px'
+// });
 
-ScrollReveal().reveal('.footer', {
-    delay: 200,
-    duration: 500,    
-    reset: true,
-    origin: 'bottom',
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '10px'
-});
+// ScrollReveal().reveal('.footer', {
+//     delay: 200,
+//     duration: 500,    
+//     reset: true,
+//     origin: 'bottom',
+//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
+//     distance: '10px'
+// });
