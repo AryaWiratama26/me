@@ -99,7 +99,7 @@ document.getElementById('backToTop').addEventListener('click', () => {
 
 /*=============== TYPED.JS ===============*/
 const typed = new Typed('.typedText', {
-    strings: ['a Machine Learning Engineer', 'an AI Specialist', 'a Data Scientist'],
+    strings: ['a ML Engineer', 'an AI Specialist', 'a Data Scientist'],
     typeSpeed: 70,
     backSpeed: 40,
     backDelay: 2000,
