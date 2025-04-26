@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arya Wiratama</title>
+    <title>Arya Wiratama | Portfolio</title>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -13,194 +13,387 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- My CSS -->
-     <link rel="stylesheet" href="/assets/css/styles.css">
-
-    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-
     <div class="container">
-    <!-- Header Start -->
-    <nav class="header" id="header">
-        <div class="logo">
-            <p class="name">Arya <span>Wiratama</span>.</p>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <div class="theme-switch" id="theme-switch">
+                <i class="uil uil-sun light-icon"></i>
+                <i class="uil uil-moon dark-icon"></i>
+                <div class="switch-ball"></div>
+            </div>
         </div>
-
-        <div class="menu" id="myMenu">
-            <ul class="menu-list">
-                <li class="list"><a href="#home" class="link">Home</a></li>
-                <li class="list"><a href="#about" class="link">About</a></li>
-                <li class="list"><a href="#projects" class="link">Projects</a></li>
-                <li class="list"><a href="#footer" class="link">Contact</a></li>       
-            </ul>
-        </div>
-
-        <div class="menu-btn">
-            <i class="uil uil-bars" onclick="menuFunction()"></i>
-        </div>
-    </nav>
-    <!-- Header End -->
-
-    <!-- Main Start -->
-
-    <main class="wrapper">
-
-        <!-- Home -->
-        <section class="featured" id="home">
-            <div class="featured-text">
-                <div class="featured-card">
-                    <span>Arya Wiratama</span>
-                </div>
-                <div class="featured-name">
-                    <p>I'm <span class="typedText"></span></p>
-                </div>
-                <div class="feadtured-info">
-                    <p>I am a Machine Learning Engineer with a strong passion for data processing and artificial intelligence.</p>
-                </div>
-                <div class="social-media-icons">
-                    <div class="icons"><a target="_blank" href="https://www.instagram.com/wirarya_/" class="sosmed"><i class="uil uil-instagram"></i></a></div>
-                    <div class="icons"><a target="_blank" href="https://www.linkedin.com/in/arya-wiratama-60a059345/" class="sosmed"><i class="uil uil-linkedin-alt"></i></a></div>
-                    <div class="icons"><a target="_blank" href="https://github.com/AryaWiratama26" class="sosmed"><i class="uil uil-github-alt"></i></a></div>
-                </div>
+        
+        <!-- Header Start -->
+        <nav class="header" id="header">
+            <div class="logo">
+                <p class="name">Arya <span>Wiratama</span>.</p>
             </div>
-            <div class="side-image">
-                <div class="image">
-                    <img src="/assets/images/avatar-me.jpeg" alt="">
-                </div>
-            </div>
-            <div class="scroll-icon">
-                <a href="#about" class="scroll-btn">
-                    <i class="uil uil-mouse-alt"></i>
-                    <p>Scroll</p>
-                </a>
-            </div>
-        </section>
-        <!-- Home -->
 
-        <!-- About -->
-        <section class="section" id="about">
-            <div class="header-me">
-                <h1>About Me</h1>
+            <div class="menu" id="myMenu">
+                <ul class="menu-list">
+                    <li class="list"><a href="#home" class="link">Home</a></li>
+                    <li class="list"><a href="#about" class="link">About</a></li>
+                    <li class="list"><a href="#projects" class="link">Projects</a></li>
+                    <li class="list"><a href="#footer" class="link">Contact</a></li>       
+                </ul>
             </div>
-            <div class="row">
-                <div class="column">
-                    <div class="about-in">
-                        <h3>Hello, This is me</h3>
-                        <p>Proficient in using Python and libraries such as TensorFlow, PyTorch, and Scikit-Learn to build, train, and optimize Machine Learning models. Experienced in data processing, including data cleaning, feature engineering, and statistical analysis to ensure optimal model performance.</p>
+
+            <div class="menu-btn">
+                <i class="uil uil-bars" id="menu-icon"></i>
+            </div>
+        </nav>
+        <!-- Header End -->
+
+        <!-- Main Start -->
+        <main class="wrapper">
+            <!-- Home -->
+            <section class="featured" id="home">
+                <div class="featured-text">
+                    <div class="featured-card">
+                        <span>Arya Wiratama</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-info">
+                        <p>I am a Machine Learning Engineer with a strong passion for data processing and artificial intelligence.</p>
+                    </div>
+                    <div class="social-media-icons">
+                        <div class="icons"><a target="_blank" href="https://www.instagram.com/wirarya_/" class="sosmed"><i class="uil uil-instagram"></i></a></div>
+                        <div class="icons"><a target="_blank" href="https://www.linkedin.com/in/arya-wiratama-60a059345/" class="sosmed"><i class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icons"><a target="_blank" href="https://github.com/AryaWiratama26" class="sosmed"><i class="uil uil-github-alt"></i></a></div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="primary-btn">View Projects</a>
+                        <a href="#footer" class="secondary-btn">Contact Me</a>
                     </div>
                 </div>
-
-                <div class="column">
-                    <div class="skills-frame">
-                        <div class="skills-head">
-                            <h3>Library</h3>
+                <div class="side-image">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="/assets/images/avatar-me.jpeg" alt="Arya Wiratama">
                         </div>
-                        <div class="skill-list">
-                            <span>Scikit-Learn</span>
-                            <span>PyTorch</span>
-                            <span>TensorFlow</span>
-                            <span>Pandas</span>
-                            <span>Numpy</span>
-                        </div>
-                    </div>
-                    <div class="skills-frame">
-                        <div class="skills-head">
-                            <h3>Language</h3>
-                        </div>
-                        <div class="skill-list">
-                            <span>Python</span>
-                            <span>C++</span>
-                            <span>Javascript</span>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-                    <div class="skills-frame">
-                        <div class="skills-head">
-                            <h3>Database</h3>
-                        </div>
-                        <div class="skill-list">
-                            <span>MySQL</span>
-                            <span>MariaDB</span>
-                            <span>Firebase</span>
-                        </div>
+                        <div class="image-backdrop"></div>
                     </div>
                 </div>
+                <div class="scroll-icon">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll</p>
+                    </a>
+                </div>
+            </section>
+            <!-- Home End -->
+
+            <!-- About -->
+            <section class="section" id="about">
+                <div class="header-me">
+                    <span class="section-subtitle">More About Me</span>
+                    <h1>About Me</h1>
+                    <div class="section-line"></div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="about-in">
+                            <div class="about-icon">
+                                <i class="uil uil-user-circle"></i>
+                            </div>
+                            <h3>Hello, This is me</h3>
+                            <p>Proficient in using Python and libraries such as TensorFlow, PyTorch, and Scikit-Learn to build, train, and optimize Machine Learning models. Experienced in data processing, including data cleaning, feature engineering, and statistical analysis to ensure optimal model performance.</p>
+                            <a href="#" class="about-btn">Download CV <i class="uil uil-import"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="skills-container">
+                            <div class="skills-frame">
+                                <div class="skills-head">
+                                    <i class="uil uil-books"></i>
+                                    <h3>Library</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <span>Scikit-Learn</span>
+                                    <span>PyTorch</span>
+                                    <span>TensorFlow</span>
+                                    <span>Pandas</span>
+                                    <span>Numpy</span>
+                                </div>
+                            </div>
+                            <div class="skills-frame">
+                                <div class="skills-head">
+                                    <i class="uil uil-programming-language"></i>
+                                    <h3>Language</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <span>Python</span>
+                                    <span>C++</span>
+                                    <span>Javascript</span>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                            <div class="skills-frame">
+                                <div class="skills-head">
+                                    <i class="uil uil-database"></i>
+                                    <h3>Database</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <span>MySQL</span>
+                                    <span>MariaDB</span>
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About End -->
+
+            <!-- Projects -->
+            <!-- Projects -->
+            <section class="section" id="projects">
+                <div class="header-me">
+                    <span class="section-subtitle">My Work</span>
+                    <h1>Projects</h1>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-con">
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/aleams.png" alt="Aleams Bot">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Telegram Bot</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Aleams Bot</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">AI-powered automation bot for educational systems and learning management platforms.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Mysql</span>
+                                <span class="tech-tag">Groq API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/dc.png" alt="Discord Chat AI">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Chat Bot</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Discord Chat AI</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">Intelligent chat bot integration for Discord servers with natural language processing capabilities.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Bot Token</span>
+                                <span class="tech-tag">Groq API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/tamslib.png" alt="Tams Library">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Library</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Tams Library</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">Basic Math Python Library.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/sentinel.png" alt="sentinelSys">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Library</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>sentinelSys</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">Advanced monitoring system with Real-time Visualisation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Psutil</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/faked.png" alt="FakedPy">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Library</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>FakedPy</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">Python library for generate fake data to csv.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Faker</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-frame">
+                        <div class="project-img">
+                            <img src="/assets/images/rillchat.png" alt="RillChat">
+                            <div class="project-overlay"></div>
+                            <div class="project-category">Messaging</div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>RillChat</h3>
+                                <span class="project-status"><i class="uil uil-check-circle"></i>Completed</span>
+                            </div>
+                            <p class="project-description">Real-time chat application with AI message analysis.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Groq API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="uil uil-eye"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="uil uil-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects End -->
+
+            <!-- Contact Form -->
+            <section class="section" id="contact">
+                <div class="header-me">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h1>Contact Me</h1>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="uil uil-envelope-alt"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>aryawiratama@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="uil uil-map-marker"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message <i class="uil uil-message"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Form End -->
+        </main>
+        <!-- Main End -->
+
+        <!-- Footer Start -->
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <p class="name">Arya <span>Wiratama</span>.</p>
+                        <p>Machine Learning Engineer</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h3>Navigation</h3>
+                            <ul class="footer-menu">
+                                <li class="footer-list"><a href="#home">Home</a></li>
+                                <li class="footer-list"><a href="#about">About</a></li>
+                                <li class="footer-list"><a href="#projects">Projects</a></li>
+                                <li class="footer-list"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Connect</h3>
+                            <div class="footer-social-icons">
+                                <div class="icons"><a target="_blank" href="https://www.instagram.com/wirarya_/" class="sosmed-2"><i class="uil uil-instagram"></i></a></div>
+                                <div class="icons"><a target="_blank" href="https://www.linkedin.com/in/arya-wiratama-60a059345/" class="sosmed-2"><i class="uil uil-linkedin-alt"></i></a></div>
+                                <div class="icons"><a target="_blank" href="https://github.com/AryaWiratama26" class="sosmed-2"><i class="uil uil-github-alt"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright &copy; <a href="#home">Arya Wiratama</a> - All rights reserved</p>
+                </div>
             </div>
-        </section>
-        <!-- About -->
+        </footer>
+        <!-- Footer End -->
+    </div>
 
-        <!-- Projects -->
-        <section class="section" id="projects">
-            <div class="header-me">
-                <h1>Projects</h1>
-            </div>
-            <div class="projects-con">
-                <div class="project-frame">
-                    <img src="/assets/images/aleams.png" alt="">
-                    <h3>Completed</h3>
-                    <label>Aleams Bot</label>
-                </div>
-                <div class="project-frame">
-                    <img src="/assets/images/dc.png" alt="">
-                    <h3>Completed</h3>
-                    <label>Discord Chat AI</label>
-                </div>
-                <div class="project-frame">
-                    <img src="/assets/images/tamslib.png" alt="">
-                    <h3>Completed</h3>
-                    <label>Tams Library</label>
-                </div>
-                <div class="project-frame">
-                    <img src="/assets/images/sentinel.png" alt="">
-                    <h3>Completed</h3>
-                    <label>sentinelSys</label>
-                </div>
-                <div class="project-frame">
-                    <img src="/assets/images/faked.png" alt="">
-                    <h3>Completed</h3>
-                    <label>FakedPy</label>
-                </div>
-                <div class="project-frame">
-                    <img src="/assets/images/rillchat.png" alt="">
-                    <h3>Completed</h3>
-                    <label>RillChat</label>
-                </div>
-            </div>
-        </section>
-        <!-- Projects -->
-
-    </main>
-    <!-- Main End -->
-
-    <!-- Footer Start -->
-
-    <footer class="footer" id="footer">
-        <div class="top-footer">
-            <p>Arya Wiratama.</p>
-        </div>
-
-        <div class="mid-footer">
-            <ul class="footer-menu">
-                <li class="footer-list"><a href="#home">Home</a></li>
-                <li class="footer-list"><a href="#about">About</a></li>
-                <li class="footer-list"><a href="#projects">Project</a></li>
-                <li class="footer-list"><a href="#footer">Footer</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-social-icons">
-            <div class="icons"><a target="_blank" href="https://www.instagram.com/wirarya_/" class="sosmed-2"><i class="uil uil-instagram"></i></a></div>
-            <div class="icons"><a target="_blank" href=https://www.linkedin.com/in/arya-wiratama-60a059345/"" class="sosmed-2"><i class="uil uil-linkedin-alt"></i></a></div>
-            <div class="icons"><a target="_blank" href="https://github.com/AryaWiratama26" class="sosmed-2"><i class="uil uil-github-alt"></i></a></div>
-        </div>
-
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none; color:#FBFFE4;">Arya Wiratama</a> - All rights reserved</p>
-        </div>
-    </footer>
-    <!-- Footer End -->
-
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="uil uil-arrow-up"></i>
     </div>
 
     <!-- Typed JS -->
