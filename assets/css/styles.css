@@ -1177,10 +1177,12 @@ h3 {
         z-index: 1000;
     }
 
+    /* Hero Section */
     .featured {
         flex-direction: column-reverse;
         text-align: center;
         padding-top: 120px;
+        padding-bottom: 20px;
     }
     
     .featured .featured-text {
@@ -1219,11 +1221,13 @@ h3 {
         width: 100%;
     }
     
+    /* Projects Section */
     .projects-con {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         
     }
     
+    /* Contact Section */
     .contact-container {
         flex-direction: column;
     }
@@ -1255,6 +1259,11 @@ h3 {
     .footer-section h3::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .scroll-icon {
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
 }
 
@@ -1350,6 +1359,12 @@ h3 {
     
     .contact-form {
         padding: 30px 20px;
+    }
+
+    .scroll-icon .scroll-btn {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
     }
 }
 
