@@ -1177,7 +1177,6 @@ h3 {
         z-index: 1000;
     }
 
-    /* Hero Section */
     .featured {
         flex-direction: column-reverse;
         text-align: center;
@@ -1220,13 +1219,11 @@ h3 {
         width: 100%;
     }
     
-    /* Projects Section */
     .projects-con {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         
     }
     
-    /* Contact Section */
     .contact-container {
         flex-direction: column;
     }
