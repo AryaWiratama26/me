@@ -1,17 +1,13 @@
-/*=============== TOGGLE THEME ===============*/
 const themeSwitch = document.getElementById('theme-switch');
 const body = document.body;
 
-// Check for saved theme preference
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
 }
 
-// Theme toggle functionality
 themeSwitch.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     
-    // Save preference to localStorage
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
     } else {
@@ -19,13 +15,11 @@ themeSwitch.addEventListener('click', () => {
     }
 });
 
-/*=============== MOBILE MENU TOGGLE ===============*/
 const menuIcon = document.getElementById('menu-icon');
 const menu = document.getElementById('myMenu');
 
 menuIcon.addEventListener('click', () => {
     menu.classList.toggle('active');
-    // Change icon
     if (menu.classList.contains('active')) {
         menuIcon.classList.replace('uil-bars', 'uil-times');
     } else {
@@ -33,7 +27,6 @@ menuIcon.addEventListener('click', () => {
     }
 });
 
-// Close menu when clicking a link
 const navLinks = document.querySelectorAll('.menu-list .link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -42,7 +35,6 @@ navLinks.forEach(link => {
     });
 });
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
@@ -63,10 +55,8 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
     const header = document.getElementById('header');
-    // When scroll is greater than 80 viewport height, add the sticky class
     if (this.scrollY >= 80) {
         header.classList.add('sticky');
     } else {
@@ -76,10 +66,8 @@ function scrollHeader() {
 
 window.addEventListener('scroll', scrollHeader);
 
-/*=============== SHOW SCROLL UP BUTTON ===============*/
 function scrollUp() {
     const scrollUp = document.getElementById('backToTop');
-    // When scroll is higher than 560 viewport height, add the show-scroll class
     if (this.scrollY >= 560) {
         scrollUp.classList.add('active');
     } else {
@@ -89,7 +77,6 @@ function scrollUp() {
 
 window.addEventListener('scroll', scrollUp);
 
-// Scroll to top when clicking the button
 document.getElementById('backToTop').addEventListener('click', () => {
     window.scrollTo({
         top: 0,
@@ -97,7 +84,6 @@ document.getElementById('backToTop').addEventListener('click', () => {
     });
 });
 
-/*=============== TYPED.JS ===============*/
 const typed = new Typed('.typedText', {
     strings: ['a ML Engineer', 'an AI Specialist', 'a Data Scientist'],
     typeSpeed: 70,
@@ -106,16 +92,13 @@ const typed = new Typed('.typedText', {
     loop: true
 });
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
     delay: 400,
-    // reset: true
 });
 
-// Home animations
 sr.reveal('.featured-card', {});
 sr.reveal('.featured-name', {delay: 500});
 sr.reveal('.featured-info', {delay: 600});
@@ -124,26 +107,20 @@ sr.reveal('.cta-buttons', {delay: 800});
 sr.reveal('.image-container', {origin: 'right', delay: 600});
 sr.reveal('.scroll-icon', {delay: 1000});
 
-// About animations
 sr.reveal('.header-me', {});
 sr.reveal('.about-in', {delay: 600});
 sr.reveal('.skills-frame', {interval: 100, delay: 700});
 
-// Projects animations
 sr.reveal('.project-frame', {interval: 200});
 
-// Contact animations
 sr.reveal('.contact-info', {delay: 600});
 sr.reveal('.contact-form', {origin: 'right', delay: 700});
 
-// Form validation
 const form = document.querySelector('form');
 if (form) {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Form validation would go here
-        // For now, just show a success message
         const formElements = form.elements;
         let allValid = true;
         
@@ -163,7 +140,6 @@ if (form) {
     });
 }
 
-/*=============== PROJECT HOVER EFFECTS ===============*/
 const projectFrames = document.querySelectorAll('.project-frame');
 
 projectFrames.forEach(frame => {
@@ -178,9 +154,7 @@ projectFrames.forEach(frame => {
     });
 });
 
-/*=============== PRELOADER ===============*/
 window.addEventListener('load', () => {
-    // Create and add preloader dynamically
     const preloader = document.createElement('div');
     preloader.className = 'preloader';
     preloader.innerHTML = `
@@ -193,7 +167,6 @@ window.addEventListener('load', () => {
     
     document.body.appendChild(preloader);
     
-    // Add preloader styles
     const style = document.createElement('style');
     style.textContent = `
         .preloader {
@@ -242,7 +215,6 @@ window.addEventListener('load', () => {
     
     document.head.appendChild(style);
     
-    // Remove preloader after page load
     setTimeout(() => {
         preloader.style.opacity = '0';
         preloader.style.visibility = 'hidden';
@@ -253,7 +225,6 @@ window.addEventListener('load', () => {
     }, 1000);
 });
 
-/*=============== PARALLAX EFFECT ===============*/
 document.addEventListener('mousemove', parallax);
 
 function parallax(e) {
