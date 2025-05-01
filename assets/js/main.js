@@ -134,7 +134,7 @@ if (form) {
         }
         
         if (allValid) {
-            alert('Your message has been sent successfully!');
+            alert("you can't send it hahaha 🤣🤣🤣");
             form.reset();
         }
     });
