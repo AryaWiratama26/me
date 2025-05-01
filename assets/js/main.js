@@ -134,7 +134,12 @@ if (form) {
         }
         
         if (allValid) {
-            alert("you can't send it hahaha 🤣🤣🤣");
+            // alert("you can't send it hahaha 🤣🤣🤣");
+            Swal.fire({
+                title: 'Prank',
+                text: "you can't send it hahaha 🤣🤣🤣",
+                confirmButtonText: 'Ok'
+              })
             form.reset();
         }
     });
